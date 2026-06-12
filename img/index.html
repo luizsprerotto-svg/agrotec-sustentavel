@@ -3,43 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Luiz Otávio Sperotto</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto Agrinho 2026 - Luiz Otávio Sperotto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Agrinho 2026</h1>
-    <p>Projeto desenvolvido por Luiz Otávio Sperotto</p>
-</header>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Agrinho 2026</div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#acoes">Ações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <section class="card">
-        <h2>🌱 Sobre o Agrinho</h2>
-        <p>
-            O Agrinho incentiva a educação, a sustentabilidade
-            e a integração entre campo e cidade.
-        </p>
+    <section class="hero">
+        <h1>Projeto Agrinho 2026</h1>
+        <p>Inovação, sustentabilidade e a conexão entre o campo e a tecnologia para um futuro melhor.</p>
+        <button id="btnAcao">Saiba Mais</button>
     </section>
 
-    <section class="card">
-        <h2>🚜 Campo e Cidade</h2>
-        <p>
-            Juntos, produzem desenvolvimento, tecnologia e qualidade de vida.
-        </p>
-    </section>
+    <main>
+        
+        <section id="sobre" class="conteudo-sec">
+            <h2>Sobre o Projeto</h2>
+            <p>O Programa Agrinho é uma iniciativa fundamental para promover a conscientização social, ambiental e cultural de crianças e jovens. Em 2026, focamos em como as novas tecnologias e as práticas sustentáveis podem caminhar juntas para proteger o meio ambiente e fortalecer a agricultura familiar.</p>
+            <p>Este espaço apresenta as pesquisas, propostas e soluções desenvolvidas para contribuir com uma comunidade mais consciente e um ecossistema rural mais forte.</p>
+        </section>
 
-    <section class="card">
-        <h2>💡 Mensagem</h2>
-        <p id="mensagem">Clique no botão abaixo.</p>
-        <button onclick="mostrarMensagem()">Mostrar Mensagem</button>
-    </section>
-</main>
+        <section id="objetivos" class="conteudo-sec">
+            <h2>Nossos Objetivos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sustentabilidade</h3>
+                    <p>Promover o uso consciente da água, do solo e a preservação das florestas e matas ciliares.</p>
+                </div>
+                <div class="card">
+                    <h3>Tecnologia no Campo</h3>
+                    <p>Explorar como a tecnologia digital pode ajudar a monitorar lavouras e reduzir o desperdício de recursos.</p>
+                </div>
+                <div class="card">
+                    <h3>Cidadania</h3>
+                    <p>Estimular hábitos saudáveis, cooperação mútua e o protagonismo jovem na comunidade escolar.</p>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <p>© 2026 - Luiz Otávio Sperotto</p>
-</footer>
+        <section id="acoes" class="conteudo-sec">
+            <h2>Ações Práticas</h2>
+            <p>Para colocar a teoria em prática, o projeto propõe o desenvolvimento de atividades que engajam a escola e a comunidade rústica:</p>
+            <ul>
+                <li><strong>Estudos de Campo:</strong> Análise das práticas locais e mapeamento de desafios na agricultura regional.</li>
+                <li><strong>Conscientização Digital:</strong> Criação de materiais informativos acessíveis para produtores rurais.</li>
+                <li><strong>Oficinas Escolares:</strong> Debates e dinâmicas sobre reciclagem, compostagem e conservação ambiental.</li>
+            </ul>
+        </section>
 
-<script src="js/script.js"></script>
+        <section id="contato" class="conteudo-sec">
+            <h2>Deixe sua Mensagem</h2>
+            <p>Tem alguma sugestão ou dúvida sobre o projeto do Luiz Otávio? Envie abaixo:</p>
+            <form id="formContato" class="form-style">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <textarea id="mensagem" placeholder="Sua Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho. Desenvolvido por <strong>Luiz Otávio Sperotto</strong>.</p>
+        <p>Hospedado no GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
